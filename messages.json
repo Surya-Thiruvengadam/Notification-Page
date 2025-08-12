@@ -1,0 +1,67 @@
+[
+  {
+    "id": 0,
+    "name": "Mark Webber",
+    "avatar": "mark",
+    "type": "react-to-post",
+    "post": "My first tournament today!",
+    "read": false,
+    "actionAt": "1m ago"
+  },
+
+  {
+    "id": 1,
+    "name": "Angela Gray",
+    "avatar": "angela",
+    "type": "follow",
+    "read": false,
+    "actionAt": "5m ago"
+  },
+
+  {
+    "id": 2,
+    "name": "Jacob Thompson",
+    "avatar": "jacob",
+    "type": "joined-group",
+    "groupName": "Chess Club",
+    "read": false,
+    "actionAt": "1 days ago"
+  },
+  {
+    "id": 3,
+    "name": "Rizky Hasanuddin",
+    "avatar": "rizky",
+    "type": "private-msg",
+    "msg": "Hello,thanks for setting up the Chess Club. I've been a memeber for a few weeks now and I'm already having lots of fun and improving my game",
+    "read": true,
+    "actionAt": "5 days ago"
+  },
+  {
+    "id": 4,
+    "name": "Kimberly Smith",
+    "avatar": "kim",
+    "type": "commented-pic",
+    "pic": "chess",
+    "read": true,
+    "actionAt": "1 week ago"
+  },
+
+  {
+    "id": 5,
+    "name": "Nathan Peterson",
+    "avatar": "nathan",
+    "type": "react-to-post",
+    "post": "5 end-game strategies to increase your win rate",
+    "read": true,
+    "actionAt": "2 weeks ago"
+  },
+  {
+    "id": 6,
+    "name": "Anna Kim",
+    "avatar": "anna",
+    "type": "left-group",
+    "groupName": "Chess Club",
+    "read": true,
+    "actionAt": "2 weeks ago"
+  }
+]

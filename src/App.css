@@ -1,0 +1,146 @@
+.container {
+  background-color: var(--Navy-50);
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.notif-cnt {
+  background-color: white;
+  padding: 25px;
+  max-width: 625px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 16px rgb(239, 239, 239);
+}
+
+.notif-cnt > header {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+}
+
+.notif-cnt > header > h1 {
+  font-weight: 800;
+}
+
+.notif-cnt > header > .unread-count {
+  background-color: var(--Blue-950);
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: var(--White);
+  font-weight: 800;
+  font-size: 1.4em;
+}
+
+.notif-cnt > header > button {
+  color: var(--Gray-500);
+  flex-grow: 1;
+  text-align: right;
+  font-weight: 600;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main > .notif {
+  display: flex;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+main > .notif[read="false"] {
+  background-color: var(--Blue-100);
+}
+
+.notif img {
+  height: 40px;
+  aspect-ratio: 1/1;
+}
+
+.notif .notif-text {
+  line-height: 21px;
+}
+
+.notif p,
+time {
+  color: var(--Gray-600);
+  font-weight: 500;
+}
+
+.notif[read="false"] p::after {
+  content: "";
+  height: 0.5em;
+  aspect-ratio: 1/1;
+  background-color: red;
+  display: inline-block;
+  border-radius: 100%;
+  margin-left: 8px;
+  margin-bottom: 2px;
+}
+
+.notif p span.user-name {
+  color: var(--Navy-950);
+  font-weight: 700;
+}
+
+.notif p span.post-name {
+  color: var(--Gray-600);
+  font-weight: 700;
+}
+
+.notif p span.group {
+  color: var(--Blue-950);
+  font-weight: 700;
+}
+
+.notif span.user-name:hover,
+.notif span.post-name:hover,
+.notif span.group:hover,
+.notif-cnt > header > button:hover {
+  color: var(--Blue-950);
+  cursor: pointer;
+}
+
+.notif .private-msg .msg {
+  border: 1px solid var(--Navy-100);
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 14px;
+  word-spacing: 1px;
+  line-height: 18px;
+  margin-top: 8px;
+}
+
+.notif .private-msg .msg:hover {
+  background-color: var(--Blue-100);
+  cursor: pointer;
+}
+
+.notif > .pic {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.notif > .pic > img:hover {
+  cursor: pointer;
+  border: 1px solid var(--Navy-100);
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.notif p span.txt {
+    display: inline-block;
+    margin-inline: 2px;
+  }
+
+@media screen and (min-width: 400px){
+  .notif p span.txt {
+    margin-inline: 5px;
+  }
+}
